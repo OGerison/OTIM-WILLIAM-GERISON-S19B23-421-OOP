@@ -5,7 +5,6 @@ package Otim;
  */
     public class CarRental 
     {
-    
     public static class Truck extends Vehicle
     {
        boolean Trailer = false; 
@@ -26,8 +25,7 @@ package Otim;
     {
         return newtruck.toString()+newvehicle.toString();  
     }
-}
-    
+}s
     public static class GarageTester
     {
         public String getExample()
@@ -77,7 +75,8 @@ package Otim;
                     System.out.println(allCurrentContracts);
                } 
             }
-            else{            
+            else
+            {            
                 return "NO CAR RENTAL CONTRACT(S).";
             }
             return "";
@@ -85,12 +84,11 @@ package Otim;
     }
     public static void main(String[] args)
     {
+        Car car = new Car();
+        System.out.println(car.toString());   
         
-        Car myCar = new Car();
-        System.out.println(myCar.toString());   
-        
-        Truck myTruck = new Truck();
-        System.out.println(myTruck.toString());
+        Truck truck = new Truck();
+        System.out.println(truck.toString());
         
         GarageTester garagetester = new GarageTester();
         System.out.println(garagetester.getExample());
@@ -98,12 +96,10 @@ package Otim;
         
         CarRentalContract carrentcontract = new CarRentalContract("OTIM","BERN");     
         carRental carrental = new carRental();
-        
         carrental.addContract(carrentcontract);
          
         System.out.println("MY CONTRACTS:" + " \n");
-        System.out.println(carrental.displayContracts());
-        
+        System.out.println(carrental.displayContracts());       
     } 
 }
 

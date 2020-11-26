@@ -3,7 +3,8 @@ package Otim;
  *
  * @author OGERISON
  */
-public class Vehicle {
+public class Vehicle 
+   {
         String Color = "WHITE";
         public String getColor()
         {

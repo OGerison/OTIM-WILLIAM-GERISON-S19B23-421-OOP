@@ -4,9 +4,9 @@ package Otim;
  * @author OGERISON
  */
     public class CarRental 
-    {
+        {
     public static class Truck extends Vehicle
-    {
+        {
        boolean Trailer = false; 
         public String toString()
         {

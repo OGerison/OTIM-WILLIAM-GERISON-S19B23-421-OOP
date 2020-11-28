@@ -6,13 +6,13 @@ package Otim;
 public class Vehicle 
    {
         String Color = "WHITE";
-        String getColor()
+        String getColor(String color)
         {
-            return Color;
+            return color;
         }
         public String toString()
         {
-            return "THIS VEHICLE IS: "+Color;  
+            return "THIS VEHICLE IS: "+ getColor(Color);  
         }
 }
    

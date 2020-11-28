@@ -8,6 +8,10 @@ package Otim;
     public static class Truck extends Vehicle
         {
        boolean Trailer = false; 
+        Truck(String truckcolor,boolean trucker){
+           this.Color = truckcolor;
+           Trailer = trucker;
+       }
         public String toString()
         {
            return "THIS VEHICLE IS: "+Color+", HAS TRAILER: "+Trailer;  

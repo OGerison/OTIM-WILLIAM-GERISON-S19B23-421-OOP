@@ -6,8 +6,10 @@ package Otim;
  public class Car extends Vehicle
     {
         boolean wintertires = false;
-        Car (boolean winter){
+         Car (String carcolor,boolean winter){
+            this.Color = carcolor;
             wintertires = winter;
+        }
         }
         public String toString()
         {

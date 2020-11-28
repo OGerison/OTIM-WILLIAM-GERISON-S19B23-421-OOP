@@ -6,7 +6,7 @@ package Otim;
 public class Vehicle 
    {
         String Color = "WHITE";
-        public String getColor()
+        String getColor()
         {
             return Color;
         }

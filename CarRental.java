@@ -4,11 +4,12 @@ package Otim;
  * @author OGERISON
  */
     public class CarRental 
-        {
+    {
+    
     public static class Truck extends Vehicle
-        {
+    {
        boolean Trailer = false; 
-        Truck(String truckcolor,boolean trucker){
+       Truck(String truckcolor,boolean trucker){
            this.Color = truckcolor;
            Trailer = trucker;
        }
@@ -19,8 +20,8 @@ package Otim;
     } 
     public static class Garage
     {        
-        Vehicle newvehicle = new Car();
-        Vehicle newtruck = new Truck();
+        Vehicle newvehicle = new Car("RED", true);
+        Vehicle newtruck = new Truck("BLACK",true);
        public String setVehicle(Vehicle parked)
         {
             return parked.toString();
@@ -29,13 +30,13 @@ package Otim;
     {
         return newtruck.toString()+newvehicle.toString();  
     }
-}s
+}
     public static class GarageTester
     {
         public String getExample()
         {
-            Truck truck = new Truck();
-            truck.Color = "GREEN";
+            Truck truck = new Truck("YELLOW", false);
+            truck.Color = "ORANGE";
             truck.Trailer = false;         
             Garage garage = new Garage();
             return garage.setVehicle(truck);
@@ -49,7 +50,7 @@ package Otim;
     public static class CarRentalContract
     {
         Customer customer = new Customer();
-        Vehicle vehicle = new Car(); 
+        Vehicle vehicle = new Car("BLACK", false); 
         CarRentalContract(String name,String address)
         {
             customer.name = name;
@@ -88,10 +89,11 @@ package Otim;
     }
     public static void main(String[] args)
     {
-        Car car = new Car();
+        
+        Car car = new Car("WHITE", true);
         System.out.println(car.toString());   
         
-        Truck truck = new Truck();
+        Truck truck = new Truck("GREEN", true);
         System.out.println(truck.toString());
         
         GarageTester garagetester = new GarageTester();
@@ -103,8 +105,10 @@ package Otim;
         carrental.addContract(carrentcontract);
          
         System.out.println("MY CONTRACTS:" + " \n");
-        System.out.println(carrental.displayContracts());       
+        System.out.println(carrental.displayContracts());  
     } 
 }
+
+
 
 

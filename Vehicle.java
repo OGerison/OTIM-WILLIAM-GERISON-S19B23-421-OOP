@@ -8,11 +8,11 @@ public class Vehicle
         String Color = "WHITE";
         String getColor(String color)
         {
-            return color;
+           return color;
         }
         public String toString()
         {
-            return "THIS VEHICLE IS: "+ getColor(Color);  
+           return "THIS VEHICLE IS: "+ getColor(Color);  
         }
 }
    

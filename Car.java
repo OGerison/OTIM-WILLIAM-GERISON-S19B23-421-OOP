@@ -13,6 +13,6 @@ package Otim;
         }
         public String toString()
         {
-            return "THIS VEHICLE IS "+Color+", HAS WINTER TYRES: "+wintertires;  
+           return "THIS VEHICLE IS "+Color+", HAS WINTER TYRES: "+wintertires; 
         }
     }
